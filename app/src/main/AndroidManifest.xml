@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.CodeFriend">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.example.CodeFriend.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocialMediaApp">
+        <activity
+            android:name="com.example.CodeFriend.IntroActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.CodeFriend.TestActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.CodeFriend.ui.messenger.Messenger"
+            android:exported="true"
+            android:theme="@style/MyAppCompatTheme"></activity>
+        <activity
+            android:name="com.example.CodeFriend.ui.main.PublishActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.CodeFriend.ui.sign.LoginAndSignUpActivity"
+            android:exported="true"
+            android:theme="@style/AppThemeForLogReg">
+
+        </activity>
+        <activity
+            android:name="com.example.CodeFriend.ui.main.MainActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeForMainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.example.CodeFriend.firebase.FirebaseService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEVIE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="langid" /> <!-- To use multiple models: android:value="langid,model2,model3" -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7572723734808420~2347425842" />
+    </application>
+
+</manifest>
