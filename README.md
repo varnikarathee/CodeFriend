@@ -28,6 +28,17 @@ Engage in discussions, ask questions, and contribute to the community's knowledg
 
 - Cloud Messaging: CodeFriend utilizes Firebase Cloud Messaging to send push notifications to users' devices. Cloud Messaging enables targeted and personalized notifications, allowing users to stay connected and receive important updates even when the application is not in use.
 
+## Screenshots
+### Splash Screen
+![WhatsApp Image 2023-07-15 at 03 13 49](https://github.com/varnikarathee/CodeFriend/assets/77229404/f3e41ba3-61fd-40ed-8ac0-14c0067594e6)
+### Login/Register UI
+![WhatsApp Image 2023-07-15 at 03 13 51](https://github.com/varnikarathee/CodeFriend/assets/77229404/243fd4a8-0538-4e82-b16c-3499b7df21b0)
+![WhatsApp Image 2023-07-15 at 03 13 48](https://github.com/varnikarathee/CodeFriend/assets/77229404/9aa3ca3b-bbf2-419e-be53-4ace120d42b5)
+### DashBoard
+![WhatsApp Image 2023-07-15 at 03 13 52](https://github.com/varnikarathee/CodeFriend/assets/77229404/caeb2888-a9de-47e4-9c23-a109a9120c4d)
+
+
+
 ## Dependencies
 - Coroutines: CodeFriend utilizes Kotlin Coroutines for asynchronous and non-blocking programming. 
 - Navigation Component: CodeFriend utilizes the Navigation Component from the Android Jetpack library.
