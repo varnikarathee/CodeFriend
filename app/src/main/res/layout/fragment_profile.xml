@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#0FEEE4D5"
+    android:background="@color/back_color"
 
     >
     <LinearLayout
@@ -21,7 +21,7 @@
                 android:id="@+id/prof_image_cover"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_220sdp"
-                android:background="#EDEDED"
+                android:background="@color/whitenew"
                 android:src="@drawable/ic_image_default"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +32,7 @@
                 android:layout_width="39dp"
                 android:layout_height="49dp"
                 android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/trans"
                 android:drawableStart="@drawable/ic_camera"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
@@ -102,18 +103,18 @@
                         android:text="Username"
                         android:gravity="center"
                         android:layout_gravity="center"
-                        android:textColor="#a22f4e"
+                        android:textColor="#969AB3"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         />
-                    <ImageButton
-                        android:id="@+id/prof_btn_edit_pen"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_pen"
-                        android:backgroundTint="@color/trans"
-                        />
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/prof_btn_edit_pen"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:src="@drawable/ic_pen"-->
+<!--                        android:backgroundTint="@color/trans"-->
+<!--                        />-->
                 </LinearLayout>
 
 

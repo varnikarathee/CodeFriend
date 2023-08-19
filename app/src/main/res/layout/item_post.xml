@@ -56,7 +56,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingHorizontal="@dimen/_1sdp"
                     android:paddingVertical="@dimen/_4sdp"
                     android:background="@drawable/custom_shape">
                     <LinearLayout
@@ -69,13 +69,16 @@
                             android:id="@+id/post_image_anyone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_alignParentStart="true"
                             android:background="@color/white"
                             android:src="@drawable/ic_public"
                             app:tint="@color/black" />
+
                         <TextView
                             android:id="@+id/post_text_anyone"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:text="anyone"
                             android:textColor="@color/black"
                             android:textSize="16sp" />
@@ -162,18 +165,41 @@
                 android:id="@+id/post_LikesTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="14 like"
-                android:layout_weight="1"
+                android:text="14"
                 android:textColor="#434d94"
                 android:layout_margin="@dimen/_3sdp"
+                android:layout_marginEnd="0dp"
+                />
+            <TextView
+                android:id="@+id/post_LikesTV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="likes"
+
+                android:textColor="#434d94"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
                 />
             <TextView
                 android:id="@+id/post_CommentTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 1.2k Comments"
+                android:text=" 1.2k"
                 android:textAlignment="textEnd"
+                android:textColor="#434d94"
+                android:gravity="end"
                 android:layout_weight="1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                />
+            <TextView
+                android:id="@+id/post_CommentTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textAlignment="textEnd"
                 android:textColor="#434d94"
                 android:gravity="end"
                 android:layout_margin="@dimen/_3sdp"

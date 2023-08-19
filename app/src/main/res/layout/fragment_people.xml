@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/back_color"
 
     >
     <androidx.appcompat.widget.SearchView
@@ -17,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:queryBackground="@android:color/transparent"
-        app:queryHint="Search" />
+        app:queryHint="Search"
+        android:textColorHint="#FDFDFD"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/friends_rv"

@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="@color/colorGrayWhite"
+    >
 
 
  <item android:id="@+id/chatsFragment"
      app:showAsAction="always"
-     android:icon="@drawable/messages"
-     android:title=""/>
+     android:icon="@drawable/chats"
+     android:title=""
+     app:cnb_iconColor="@color/whitenew"/>
 
     <item android:id="@+id/peopleFragment"
-        app:showAsAction="ifRoom"
-        android:title=""
-        android:icon="@drawable/people"/>
-
-    <item android:id="@+id/gptFragment"
         app:showAsAction="always"
-        android:icon="@drawable/code"
-        android:title=""/>
+        android:title=""
+        android:icon="@drawable/peoples"
+        app:cnb_iconColor="@color/whitenew"/>
+
+<!--    <item android:id="@+id/gptFragment"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/code"-->
+<!--        android:title=""-->
+<!--        app:cnb_iconColor="@color/whitenew"/>-->
 
 
 

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.sign.LoginAndSignUpActivity"
-    android:background="#0FEEE4D5">
+ >
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_frag"

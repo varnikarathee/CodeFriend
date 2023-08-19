@@ -34,4 +34,11 @@
     <color name="colorBlue">#04198E</color>
     <color name="trans">#00000000</color>
 
+    <color name="back_color">#363342</color>
+    <color name ="gpt_color">#0FEEE4D5</color>
+    <color name ="gpt_color2">#262932</color>
+    <color name= "whitenew">#FDFDFD</color>
+    <color name="textcolor">#969AB3</color>
+
+    <color name="edt_back_color">#414051</color>
 </resources>

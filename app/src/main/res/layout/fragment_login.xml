@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#0FEEE4D5"
+    android:background="@color/back_color"
     >
 <!--  <RelativeLayout-->
 <!--      android:layout_width="match_parent"-->
@@ -38,7 +38,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="140dp"
         android:text="Hi,\nDo Login"
-        android:textColor="#434d94"
+        android:textColor="@color/textcolor"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
                     android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
+                    android:padding="@dimen/_12sdp"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:inputType="textPassword"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
+                    android:padding="@dimen/_12sdp"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 

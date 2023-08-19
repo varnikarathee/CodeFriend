@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.HomeFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_postDetailsFragment"
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.ProfileFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.ProfileFragment"
         android:label="ProfileFragment" >
         <action
             android:id="@+id/action_profileFragment_to_postDetailsFragment"
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/videosFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.VideosFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.VideosFragment"
         android:label="VideosFragment" >
         <action
             android:id="@+id/action_videosFragment_to_postDetailsFragment"
@@ -49,11 +49,11 @@
     </fragment>
     <fragment
         android:id="@+id/publishFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.PublishFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.PublishFragment"
         android:label="PublishFragment" />
     <fragment
         android:id="@+id/postDetailsFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.PostDetailsFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.PostDetailsFragment"
         android:label="PostDetailsFragment" >
         <argument
             android:name="post"
@@ -64,7 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/postOwnerFragment"
-        android:name="com.example.CodeFriend.ui.main.fragment.PostOwnerFragment"
+        android:name="com.example.socialmediaapp.ui.main.fragment.PostOwnerFragment"
         android:label="PostOwnerFragment" >
         <argument
             android:name="post"

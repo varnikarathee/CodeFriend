@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity"
-    android:background="#0FEEE4D5"
+
+    android:background="@color/back_color"
     >
 
 
@@ -13,7 +14,7 @@
             android:id="@+id/bottom_menu"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_55sdp"
-            android:background="@color/colorWhite"
+            android:background="@color/white"
             app:cnb_menuResource="@menu/menu_bottom"
             app:cnb_radius="@dimen/_5sdp"
             app:cnb_badgeColor="@color/red"

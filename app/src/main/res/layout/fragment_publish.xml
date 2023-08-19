@@ -5,142 +5,267 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#0FEEE4D5"
+    android:background="@color/back_color"
     >
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_4sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/temp_constaint"
+        android:orientation="vertical"
         >
 
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/publish_my_image"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:scaleType="centerCrop"
-            app:civ_border_color="#434d94"
-            app:civ_border_width="@dimen/_1sdp"
-            android:layout_margin="@dimen/_3sdp"
-            android:layout_gravity="start"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/default_user"
-            />
-
-
-        <TextView
-            android:id="@+id/publish_my_name"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="1"
-            android:text="User"
-            android:textColor="#a22f4e"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:layout_margin="@dimen/_3sdp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/publish_my_image"
-
-            />
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="35dp"
-            android:layout_marginHorizontal="5dp"
-            android:layout_marginVertical="5dp"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toEndOf="@id/publish_my_image"
-            app:layout_constraintTop_toBottomOf="@id/publish_my_name"
-
             >
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/custom_shape">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/publish_my_image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_user"
+                app:civ_border_color="#434d94"
+                app:civ_border_width="@dimen/_1sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <RelativeLayout
-                    android:id="@+id/publish_btn_anyone"
+
+            <TextView
+                android:id="@+id/publish_my_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Name"
+                android:textColor="#A22F4E"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/publish_my_image"
+
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@id/publish_my_image"
+                app:layout_constraintTop_toBottomOf="@id/publish_my_name"
+
+                >
+
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:gravity="center">
+                    android:background="@drawable/custom_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/publish_btn_anyone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="@dimen/_1sdp"
+                        android:focusable="true"
+                        >
 
 
-                    <TextView
-                        android:id="@+id/text_anyone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:ellipsize="end"
-                        android:lines="1"
-                        android:text="anyone"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/publish_text_anyone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text=" anyone"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
 
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginEnd="@dimen/_2sdp"
-                        android:layout_marginBottom="@dimen/_2sdp"
-                        android:layout_toEndOf="@id/text_anyone"
-                        android:backgroundTint="@color/white"
-                        android:src="@drawable/ic_arrow_drop_down"
-                        app:tint="@color/black" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_arrow_drop_down"
+                            app:tint="@color/black" />
 
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginEnd="@dimen/_2sdp"
-                        android:layout_marginBottom="@dimen/_2sdp"
-                        android:backgroundTint="?attr/selectableItemBackground"
-                        android:src="@drawable/ic_public"
-                        app:tint="@color/black" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_public"
+                            app:tint="@color/black" />
 
-                </RelativeLayout>
+                    </RelativeLayout>
 
-            </FrameLayout>
+                </FrameLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/black"-->
+<!--        >-->
+
+<!--              <androidx.appcompat.widget.AppCompatButton-->
+<!--                            android:id="@+id/publish_btn_publish"-->
+<!--                            android:layout_width="64dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:backgroundTint="@color/black"-->
+<!--                            android:clickable="true"-->
+<!--                            android:elevation="@dimen/_1sdp"-->
+<!--                            android:text="POST"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <View android:layout_width="match_parent"
-        android:layout_height="@dimen/_2sdp"
-        android:background="@color/colorGray"
-        android:layout_marginVertical="@dimen/_3sdp"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        />
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/publish_my_image"-->
+<!--                        android:layout_width="@dimen/_60sdp"-->
+<!--                        android:layout_height="@dimen/_60sdp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        app:civ_border_color="#434d94"-->
+<!--                        app:civ_border_width="@dimen/_1sdp"-->
+<!--                        android:layout_margin="@dimen/_3sdp"-->
+<!--                        android:layout_gravity="start"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        android:src="@drawable/default_user"-->
+<!--                        />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/publish_my_name"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:lines="1"-->
+<!--                        android:text="User"-->
+<!--                        android:textColor="#AAAECC"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="24sp"-->
+<!--                        android:layout_margin="@dimen/_3sdp"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/publish_my_image"-->
+
+<!--                        />-->
+
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="@dimen/_150sdp"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:layout_marginHorizontal="5dp"-->
+<!--                        android:layout_marginVertical="5dp"-->
+<!--                        app:cardCornerRadius="6dp"-->
+<!--                        app:cardElevation="0dp"-->
+<!--                        app:layout_constraintStart_toEndOf="@id/publish_my_image"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/publish_my_name"-->
+
+<!--                        >-->
+
+<!--                        <FrameLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="@drawable/custom_shape1">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:id="@+id/publish_btn_anyone"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/custom_shape1"-->
+<!--                                android:clickable="true"-->
+<!--                                android:focusable="true"-->
+<!--                                android:gravity="center">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/publish_text_anyone"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:ellipsize="end"-->
+<!--                                    android:lines="1"-->
+<!--                                    android:text="Public"-->
+<!--                                    android:textColor="@color/white"-->
+<!--                                    android:textSize="16sp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <ImageButton-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerVertical="true"-->
+<!--                                    android:layout_marginStart="2.40dp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:layout_marginEnd="@dimen/_2sdp"-->
+<!--                                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                                    android:layout_toEndOf="@id/publish_text_anyone"-->
+<!--                                    android:src="@drawable/arrow_drop_down1"-->
+<!--                                    android:backgroundTint="@color/black"-->
+<!--                                 />-->
+
+<!--                                <ImageButton-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerVertical="true"-->
+<!--                                    android:layout_marginStart="@dimen/_2sdp"-->
+<!--                                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                                    android:layout_marginEnd="@dimen/_2sdp"-->
+<!--                                    android:layout_marginBottom="@dimen/_2sdp"-->
+<!--                                    android:src="@drawable/ic_public1"-->
+<!--                                  android:backgroundTint="@color/black" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </FrameLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_4sdp"
-        android:hint="What is trending?"
-        android:padding="@dimen/_9sdp"
-        android:textSize="@dimen/_20sdp"
-        android:gravity="top"
-        android:lines="15"
-        android:elevation="@dimen/_1sdp"
-        />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:hint="What you are upto?"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_9sdp"
+                    android:textSize="@dimen/_20sdp"
+                    android:gravity="top"
+                    android:lines="15"
+                    android:background="@color/white"
+                    android:elevation="@dimen/_1sdp"
+                    />
 
 
 
-</LinearLayout>
+            </LinearLayout>
