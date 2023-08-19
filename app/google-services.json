@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "832413289333",
-    "project_id": "codelit-aa19e",
-    "storage_bucket": "codelit-aa19e.appspot.com"
+    "project_number": "963087032117",
+    "project_id": "codefriend-c8749",
+    "storage_bucket": "codefriend-c8749.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:832413289333:android:fb6637d3a340fc7dc4213c",
+        "mobilesdk_app_id": "1:963087032117:android:3a918332c425b2d2b9767c",
         "android_client_info": {
           "package_name": "com.example.socialmediaapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "832413289333-008c3qpm32tpp3bsi990meadrn75548c.apps.googleusercontent.com",
+          "client_id": "963087032117-d5i8l5caqn4262phff6vg7l20g7372cc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAnCembO1ceN5Mpo-daKJWY4fLvjCcWBMs"
+          "current_key": "AIzaSyD52J82Z0GcrZdqSN5Lq69znOVV5o4vQFo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "832413289333-008c3qpm32tpp3bsi990meadrn75548c.apps.googleusercontent.com",
+              "client_id": "963087032117-d5i8l5caqn4262phff6vg7l20g7372cc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
