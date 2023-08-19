@@ -63,7 +63,7 @@ class Chatbot : AppCompatActivity() {
         idTVQuestion.text = question
         etQuestion.setText("")
 
-        val apiKey="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"
+        val apiKey="API_KEY"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""
